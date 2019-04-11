@@ -5,3 +5,9 @@ var OpenStreetMap_DE = L.tileLayer.wms('http://mesonet.agron.iastate.edu/cgi-bin
   transparent: true,
   attribution: 'NOAA, Iowa State University'
 }).addTo(mymap)
+var OpenStreetMap_DE = L.tilelayer.wms('https://mesonet.agron.iastate.edu/cgi-bin/wms/us/wwa.cgi', {
+  layers: 'warnings_c',
+  format: 'image/png',
+  transparent: true
+  attribution: 'NOAA, Iowa State University'
+}).addTo(mymap)
